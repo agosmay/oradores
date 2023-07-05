@@ -1,0 +1,109 @@
+.personaje,
+.portada,
+.beach
+{
+	width: 100%;
+	height: auto;
+	
+	
+}
+
+.logoCodo {
+	height: 3rem;
+}
+
+a {
+	text-decoration: none!important;
+}
+
+.portada {
+	opacity: 50%;
+	
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: 300px;
+  right: 100px;
+  font-weight: bold;
+  width: 50%;
+  font-size: 0.9rem;
+  
+ 
+ 
+}
+
+.botoneraMobile {
+	display: flex;
+	justify-content: space-between;
+	
+}
+
+.small {
+	font-size: 12px;
+}
+
+
+
+.border-personaje {
+	border: 1px solid grey;
+	
+}
+
+.beach {
+	height: 100%;
+	
+}
+
+.navBar-footer {
+	background-color: #adb5bd!important;
+}
+
+.botonSubmit {
+	width: 100%;
+	
+	
+}
+
+/* estilos seccion comprar tickets */
+
+
+.estudiante {
+	border: 2px solid blue;
+}
+
+.trainee {
+	border: 2px solid green;
+	
+}
+
+.junior {
+	border: 2px solid yellow;
+}
+
+.botonTickets {
+	width: 48%;
+	
+}
+
+.backP {
+	background-color: limegreen;
+	padding: 10px;
+	
+}
+
+
+@media (max-width: 600px) {
+  .bottom-right {
+		display: none;
+  }
+}
+
+@media(min-width: 600px) {
+	.cabecera {
+		display: none;
+	}
+	
+	
+}
+

@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    {{>head}}
+  </head>
+  <body>
+     <nav class="navbar navbar-expand-lg bg-body-tertiary">
+	  {{>nav}}
+	</nav>
+	<header class="container-fluid">
+			<img class="portada" src="EdificioPortada.jpg" alt="building">
+			<div class="bottom-right" id="conf">
+				<h3 class="text-end">Conf Bs As</h1>
+				<p class="text-end">
+					Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia
+					de los expertos que estan creando el futuro de Internet. Ven a conocer a miembros del evento, otros estudiantes de 
+					Codo a Codo y los oradores de primer nivel que tenemos para ti. Te esperamos!
+				</p>
+				<div class="text-end botonera">
+					<a href="#conviertete"><button type="button" class="btn btn-dark">Quiero ser orador</button></a>
+					<a href="/comprar"><button type="button" class="btn btn-success">Comprar tickets</button></a>
+				</div>
+			</div>
+			<div class="cabecera">
+				<h3 class="text-end">Conf Bs As</h1>
+				<p class="text-end">
+					Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia
+					de los expertos que estan creando el futuro de Internet. Ven a conocer a miembros del evento, otros estudiantes de 
+					Codo a Codo y los oradores de primer nivel que tenemos para ti. Te esperamos!
+				</p>
+				<div class="text-end botoneraMobile">
+					<a href="#conviertete"><button type="button" class="btn btn-dark small">Quiero ser orador</button></a>
+					<a href="/comprar"><button type="button" class="btn btn-success small">Comprar tickets</button></a>
+				</div>
+			</div>
+			
+	</header>
+	<main>
+		<section class="container p-3" id="oradores">
+			<h5 class="text-center">CONOCE A LOS</h5>
+			<h1 class="text-center">ORADORES</h1>
+			<div class="row">
+					<div class="col-sm-12 col-md-4">
+						<img class="personaje" src="SteveJobs.jpg" alt="Steve Jobs">
+						<div class="p-3 border-personaje">
+							<button type="button" class="btn btn-warning ">Javascript</button>
+							<button type="button" class="btn btn-primary ">React</button>
+							<h2>Steve Jobs</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+							Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+							in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+						</div>
+					</div>
+					<div class="col-sm-12 col-md-4">
+						<img class="personaje" src="BillGates.jpg" alt="Bill Gates">
+						<div class="p-3 border-personaje">
+							<button type="button" class="btn btn-warning ">Javascript</button>
+							<button type="button" class="btn btn-primary ">React</button>
+							<h2>Bill Gates</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+							Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+							in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+						</div>
+					</div>
+					<div class="col-sm-12 col-md-4">
+						<img class="personaje" src="Madame.jpg" alt="Madame">
+						<div class="p-3 border-personaje">
+							<button type="button" class="btn btn-secondary ">Negocios</button>
+							<button type="button" class="btn btn-danger ">Startups</button>
+							<h2>Ada Lovelace</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+							Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+							in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+						</div>
+					</div>
+			</div>
+		</section>
+			
+		<section class="container-fluid" id="lugarFecha">
+			
+				<div class="row">
+						<div class="col-sm-12 col-md-6">
+							<img class="beach" src="SkyBeach.jpg" alt="Beach">
+						</div>
+						<div class="col-sm-12 col-md-6">
+							<div class="bg-dark text-light beach p-2">
+							
+								<h3>Bs As - Octubre</h3>
+								<p>Buenos Aires es la provincia y localidad mas grande del estado de Argentina, en los Estados Unidos.
+								Honolulu es la mas surena de entre las principales ciudades estadounidenses. Aunque el nombre de Honolulu
+								se refiere al area urbana en la costa sureste de la isla de Oahu, la ciudad y el condado de Honolulu han formado
+								una ciudad-condado consolidada que cubre toda la ciudad (aproximadamente 600km2 de superficie).</p>
+								<a href="https://es.wikipedia.org/wiki/Honolulu"><button type="button" class="btn btn-outline-light">Conoce mas</button></a>
+								
+							
+							</div>
+						</div>
+				</div>
+			
+		</section>
+		<section class="container text-center p-3" id="conviertete">
+			<h5 class="text-center">CONVIERTETE EN UN</h5>
+			<h1 class="text-center">ORADOR</h1>
+			<P>Anotate como orador para dar una <span style="text-decoration: underline;">charla ingnite</span>. Cuentanos de que quieres hablar!</P>
+			<form action="/agregar-orador" method="POST">
+				<div class="mb-3">
+				  <label for="nombre" class="form-label"></label>
+				  <input type="text" name="nombre" id="nombre" class="form-control" placeholder="Nombre">
+				</div>
+				<div class="mb-3">
+				  <label for="apellido" class="form-label"></label>
+				  <input type="text" class="form-control" id="apellido" name="apellido" placeholder="Apellido">
+				</div>
+				<div class="mb-3">
+				  <label for="asunto" class="form-label"></label>
+				  <textarea class="form-control" id="asunto" name="asunto" id="asunto" placeholder="Sobre que quieres hablar?" rows="3"></textarea>
+				</div>
+				
+					<button type="submit" class="btn btn-success botonSubmit">Enviar</button>
+			
+			</form>
+		</section>
+	</main>
+	<footer>
+		<nav class="navbar navbar-expand-lg bg-body-tertiary navBar-footer">
+		  {{>footer}}
+		</nav>
+	</footer>
+	
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+	
+  </body>
+</html>

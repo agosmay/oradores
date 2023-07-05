@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    {{>head}}
+  </head>
+  <body>
+     <nav class="navbar navbar-expand-lg bg-body-tertiary">
+		{{>nav}}
+	</nav>
+	
+	
+	<main>
+		<section class="container p-3">
+			
+			<div class="row">
+					<div class="col-sm-12 col-md-4">
+						
+						<div class="p-3 text-center estudiante">
+							
+							<h4>Estudiante</h4>
+							<p>Tienen un descuento</p>
+							<h4><strong>80%</strong></h4>
+							<p>* presentar documentacion</p>
+						</div>
+					</div>
+					<div class="col-sm-12 col-md-4">
+						
+						<div class="p-3 text-center trainee">
+							
+							<h4>Trainee</h4>
+							<p>Tienen un descuento</p>
+							<h4><strong>50%</strong></h4>
+							<p>* presentar documentacion</p>
+						</div>
+					</div>
+					<div class="col-sm-12 col-md-4">
+						
+						<div class="p-3 text-center junior">
+							<h4>Junior</h4>
+							<p>Tienen un descuento</p>
+							<h4><strong>15%</strong></h4>
+							<p>* presentar documentacion</p>
+						</div>
+					</div>
+			</div>
+		</section>
+		<section class="container text-center p-3">
+			<h4 class="text-center">VENTA</h4>
+			<h1 class="text-center">VALOR DE TICKET $200</h1>
+			<form id="myForm">
+				<div class="mb-3">
+				  <label for="nombre" class="form-label"></label>
+				  <input type="text" class="form-control" id="nombre" placeholder="Nombre" name="nombre" required>
+				</div>
+				<div class="mb-3">
+				  <label for="apellido" class="form-label"></label>
+				  <input type="text" class="form-control" id="apellido" placeholder="Apellido" name="apellido" required>
+				</div>
+				<div class="mb-3">
+				  <label for="correo" class="form-label"></label>
+				  <input type="email" class="form-control" id="correo" placeholder="Correo" name="correo" required>
+				</div>
+				<div class="mb-3">
+				  <label for="cantidad" class="form-label"></label>
+				  <input type="number" class="form-control" id="cantidad" placeholder="Cantidad" name="cantidad" required>
+				</div>
+				<select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" id="seleccionCategoria" required>
+				 
+				  <option value="estudiante">Estudiante</option>
+				  <option value="trainee">Trainee</option>
+				  <option value="junior">Junior</option>
+				</select>
+					<div>
+						<p class="backP" id ="contenedorMonto">Total a pagar: $ </p>
+					</div>
+					<button type="reset" class="btn btn-success botonTickets" id="borrar" >Borrar</button>
+					<button type="submit" class="btn btn-success botonTickets" id="calcular">Resumen</button>
+			</form>
+		</section>
+		
+	</main>
+	<hr/>
+	<a href="/"><button type="button" class="btn btn-dark">Volver al inicio</button></a>
+	
+		<footer>
+		<nav class="navbar navbar-expand-lg bg-body-tertiary navBar-footer">
+		  {{>footer}}
+		</nav>
+	</footer>
+	
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+	<script src="./app.js"></script>
+  </body>
+</html>
+
